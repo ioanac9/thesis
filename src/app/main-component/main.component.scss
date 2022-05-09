@@ -22,13 +22,25 @@
   padding: 10px 5px;
 
   .result {
-    width: 100%;
+    width: 160px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 16px;
     cursor: pointer;
     padding: 15px;
+
+    &:hover {
+      filter: brightness(1.15);
+      box-shadow: 0px 3px 10px lightgray;
+    }
+
+    &:focus {
+      box-shadow: 0 3px 7px rgba(lightgray, 0.3);
+      filter: brightness(0.9);
+      transition: box-shadow 0.1s, background-color 0.1s;
+    }
 
     &.positive {
       background: #BF4D40;

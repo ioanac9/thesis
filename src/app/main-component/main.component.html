@@ -5,7 +5,7 @@
 
 <div class="app-container">
     <div class="cards-container" *ngIf="displaySection === 'results'">
-        <div *ngFor="let result of results" class="result"
+        <div *ngFor="let result of results" class="result pop"
              [ngClass]="result.is_healthy? 'negative' : 'positive'">
             <a routerLink="result/:{{result.id}}">
                 <h1>{{result.full_name}}</h1>
@@ -29,7 +29,7 @@
                    type="text" maxlength="30"
                    [placeholder]="'Enter your email'">
             <input type="file" accept="audio/*">
-            <div class="confirm-btn">Confirm</div>
+            <div class="confirm-btn pop">Confirm</div>
         </div>
     </div>
 </div>
