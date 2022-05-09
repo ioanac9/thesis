@@ -1,0 +1,14 @@
+@import '../../styles';
+
+.result-card {
+  border: 1px solid dimgray;
+  border-radius: 16px;
+  padding: 30px;
+  font-size: 12px;
+  width: 80%;
+  margin: 40px auto;
+
+  h1 {
+    padding: 10px 0;
+  }
+}

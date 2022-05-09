@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.app-container {
+  height: 100%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  touch-action: pan-x pan-y;
+}
+
+body {
+  background: var(--backgroundColor2);
+}
+
+div {
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  box-shadow: none;
+  outline: none;
+  resize: none;
+
+  &:hover, &:active {
+    outline: none;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+div:focus {
+  outline: none;
+}
